@@ -8,14 +8,12 @@ const Card = ({title}) => {
   const [hasLiked, setHasLiked] = useState(false);
 
   const handleLike = () => {
-    setHasLiked((prev) => {
-      if (!prev) {
-        setCount((c) => c + 1);
-      } else {
+      if (hasLiked) {
         setCount((c) => c - 1);
+      } else {
+        setCount((c) => c + 1);
       }
-      return !prev;
-    });
+      setHasLiked(!hasLiked);
   };
 
   useEffect(() => {
