@@ -22,7 +22,7 @@ const Card = ({title}) => {
 
   return (
     <div className='card'>
-      <h2>{title} <br/> {count}</h2>
+      <h2>{title} <br/> {count || null}</h2>
       <button onClick={handleLike}>
         {hasLiked ? 'Liked' : 'Like'}
       </button>
