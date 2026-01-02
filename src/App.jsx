@@ -81,7 +81,7 @@ const App = () => {
           </h2>
 
           {/* {errorMessage && <p className='text-red-500'>{errorMessage}</p>} */}
-          {isLoading ? (
+          {/* {isLoading ? (
             <p className="text-white" >Loading...</p>
           ) : errorMessage ? (
             <p className='text-red-500'>{errorMessage}</p>
@@ -93,7 +93,7 @@ const App = () => {
             </ul>
           )
 
-          }
+          } */}
         </section>
       </div>
 
